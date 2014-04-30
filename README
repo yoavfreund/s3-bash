@@ -13,3 +13,7 @@ s3-put -k {accesskey} -s /{path}/{secretid} -T /{path}/{filename} /{bucketname}/
 > Delete from bucket:
 
 s3-delete -k {accesskey} -s /{path}/{secretid} /{bucketname}/{filename}
+
+
+### An example upload performed from ION-21-14 to S3 ###
+/oasis/projects/nsf/csd181/hadoop/s3-bash/s3-put -k AKIAI7AWJT7RBAPJX6WQ -s ~/.boto/secret -T /oasis/projects/nsf/csd181/yfreund/weather/processed/ALL.csv.gz /Weather.GHNC/ALL.csv.gz
